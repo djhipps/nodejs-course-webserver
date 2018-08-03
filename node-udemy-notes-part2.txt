@@ -1,0 +1,10 @@
+NODEJS - Udemy Part 2 - web applications
+***************************************
+
+Debuggin in Chrome
+------------------
+node(mon) —inspect-brk file.js // open chrome dev tools using chrome://inspect in the browser bar and then click on 'Open dedicated DevTools for Node'.
+This out the following:
+Debugger listening on ws://127.0.0.1:9229/4e3f4d22-2d21-46dc-bde7-a8e958bffb99
+
+Open up Chrome, go to chrome://inspect and click on "Open dedicated DevTools for Node".
