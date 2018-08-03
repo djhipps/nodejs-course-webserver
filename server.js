@@ -13,7 +13,10 @@ app.use((req, res, next) => {
   var log = `${now}: ${req.method} ${req.url}`;
 
   console.log(log);
-  fs.appendFile('server.log', log + '\n');
+  fs.appendFile('server.log', log + '\n', (err) => {
+    if(err) throw err;
+    console.log('The data file to append was appened to the file!');
+  });
   next();
 });
 
@@ -47,7 +50,7 @@ app.get('/about', (req, res) => {
 app.get('/projects', (req, res) => {
   res.render('projects.hbs', {
     pageTitle: 'Projects Page',
-    welcomeMessage: 'Welcome to the projects page.'
+    welcomeMessage: 'Welcome to the projects page'
   });
 });
 
