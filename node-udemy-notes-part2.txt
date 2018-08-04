@@ -6,5 +6,15 @@ Debuggin in Chrome
 node(mon) —inspect-brk file.js // open chrome dev tools using chrome://inspect in the browser bar and then click on 'Open dedicated DevTools for Node'.
 This out the following:
 Debugger listening on ws://127.0.0.1:9229/4e3f4d22-2d21-46dc-bde7-a8e958bffb99
-
 Open up Chrome, go to chrome://inspect and click on "Open dedicated DevTools for Node".
+
+Deployment workflow
+--------------------
+Having set up a git repo and a heroku server, the deployment process is…
+- Make changes
+- test they work on localhost
+- git add * //covers new files 
+- git commit
+- git push
+- git push heroku
+
